@@ -1,13 +1,145 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(231, 110, 110);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(202, 19, 202);
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .navbar .logo{
+  width: 100%;
+  height: 100%;
+} */
+.navbar .logo img{
+   width: 50px;
+}
+.head p{
+  font-size: 19px;
+  color: blue;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.navbar-details button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(85, 85, 235);
+  color: #fff;
+  outline: none;
+}
+.navbar-details button:hover{
+  background-color: coral;
+  transition: all 0.3s;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.container .card{
+  margin: 20px 0;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height:auto
+}
+.container .card .jox{
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 20px;
+  background-color: rgb(255, 245, 245);
+  /* width: 50vw; */
+}
+
+.container .card .jox:hover{
+  background-color: #111;
+  color: #fff;
+  transition: all 0.3s;
+}
+.fox{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+.fox img{
+ width: 200px;
+ height: 200px;
+ padding: 0 10px;
+}
+
+.sox{
+  padding: 0 10px;
+  position: relative;
+}
+.sox h3{
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: lighter;
+}
+.sox a{
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
+}
+  i{
+  font-size: 38px;
+    color: aqua;
+    position: absolute;
+    top: 156px;
+    z-index: 99;
+    opacity: 0.6;
+    left: 30px;
+}
+
+.sox h2{
+  position: absolute;
+    top: -40px;
+    left: 70px;
+    z-index: 99;
+}
+ 
+
